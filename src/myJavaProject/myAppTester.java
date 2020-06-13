@@ -9,13 +9,17 @@ public class myAppTester {
  public static void main(String[] args) {
 	  
 	  Scanner input = new Scanner(System.in);
-	  int n=0;
+	  int n=0,z;
 	  System.out.println("Hello Software Engineering World");
 	  System.out.println("Input your number and press enter: ");
 	  n = input.nextInt();
 	  System.out.print("Reverse of the input number is:");
 	  reverseMethod(n);
 	  System.out.println();
+	  System.out.println("find whether it is  leap year or not?");
+	  System.out.println("enter the year");
+	  z=input.nextInt();
+	  leapyear(z)
 
 	  // add a line below to call your myTestMethod from here  then remove the block comment symbols  
 
@@ -32,16 +36,39 @@ public class myAppTester {
 	           reverseMethod(num/10);     // recursive call
 	       }
 	   }
-
-
-	   /* 
-	       add your test method in this space then remove the block comment symbols
-	       public static void myTestMethod(...){
-
             
-
-		   }
+	
+	  public static leapyear(int a)
 	 
-	   */
+	  {
+		  int year=a;
+		 boolean leap=false;
+		 if(year%==0)
+		 {
+			 if(year%100==0)
+			 {
+				 if(year%400==0)
+				 
+					 leap=true;
+					 else
+						 leap=false;
+					 
+				 
+				 
+			 }
+			 else
+				 leap=true
+		 }
+		 else
+			 leap=false
+			 
+			if(leap)
+				System.out.println(year + "is a leap year. ");
+			else
+				System.out.println(year + "is not a leap year");
+		 
+	  }
+
+	  
 
 }
